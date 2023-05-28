@@ -1,0 +1,301 @@
+:root {
+  --lightColor: #fff;
+  --priymaryColor: #00b289;
+  --secondPriymaryColor: #f8db62;
+  --grayColor: #4c4d5f;
+  --darkColor: #003c2f;
+  --buttomColor: #2bb90a;
+  --borderColor: #ee8146;
+  --padding: 0 5%;
+}
+/* =============Glabal Selectors ========================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scrollbar-width: none;
+}
+body {
+  color: var(--grayColor);
+  overflow-x: hidden;
+}
+h1 {
+  color: var(--darkColor);
+  padding: 2rem 0;
+  font-size: 40px;
+}
+h2 {
+  color: var(--darkColor);
+}
+sub {
+  font-size: 14px;
+  color: #7b7b7b;
+  font-weight: 400;
+}
+h3 {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  display: flex;
+  color: var(--darkColor);
+  align-items: center;
+}
+i {
+  font-size: 20px;
+  color: var(--buttomColor);
+  padding-right: 0.9rem;
+}
+p {
+  font-size: 14px;
+  color: #70826b;
+}
+a {
+  color: var(--buttomColor);
+  padding: 1rem 0;
+  display: block;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: var(--buttomColor);
+  color: var(--lightColor);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+/* ====================================================(Header)=========================================================== */
+/* ====================================================(Header)=========================================================== */
+/* ====================================================(Main)=========================================================== */
+/* ====================================================(Main)=========================================================== */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.changingDiv {
+   display: flex;
+   background-color:#F0F5F0 ;
+   border-radius: 30px;
+   padding:  0 1.2rem;
+   align-items: center;
+   margin-bottom: 2rem;
+  }
+  .changingDiv h6 {
+    margin: .8rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+}
+.changingDiv .div-2 {
+  background-color: var(--darkColor);
+  color: var(--lightColor);
+  border-radius: 30px;
+  margin: 6px 0;
+}
+.changingDiv .div-2 h6:nth-child(2){
+  color: var(--buttomColor);
+  background-color: var(--lightColor);
+ border-radius: 30px;
+ padding:  5px 10px;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  padding: 4rem 2rem;
+  padding-bottom: 3rem;
+  border-radius: 15px;
+}
+.card:nth-child(2) {
+  box-shadow: 6px -30px 0 var(--borderColor), -6px -30px 0 var(--borderColor),
+    -6px 6px 0 var(--borderColor), 6px 6px 0 var(--borderColor);
+  position: relative;
+}
+.card:nth-child(2)::after {
+  content: "Best value for money";
+  position: absolute;
+  top: -23px;
+  left: 0;
+  font-size: 12px;
+  color: var(--lightColor);
+  text-align: center;
+  width: 100%;
+}
+
+.secondCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.card-formSecond {
+  width: 340px;
+  height: 350px;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+}
+.card-formSecond h3 {
+  font-size: 20px;
+}
+.card-formSecond h1 {
+  font-size: 30px;
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+.questions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.questions h3 {
+  font-size: 20px;
+}
+.questions .questions-img {
+  position: absolute;
+  top: 0;
+  right: -180px;
+}
+.accordion {
+  max-width: 700px;
+  margin: 150px 0;
+  text-align: left;
+  position: relative;
+  right: 270px;
+}
+.accordion .contentBx {
+  text-align: left;
+  /* margin: 10px 20px; */
+}
+.accordion .contentBx .label {
+  position: relative;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin: 1rem 0;
+}
+.accordion .contentBx .label::before {
+  content: ">";
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  transition: 0.4s;
+  color: var(--buttomColor);
+}
+.accordion .contentBx.active .label::before {
+  transform: rotate(-90deg);
+}
+.accordion .contentBx .content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  overflow-y: auto;
+}
+.accordion .contentBx.active .content {
+  height: 90px;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.3);
+}
+.trusted {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 0;
+  margin-bottom: 100px;
+}
+img {
+  max-width: 100%;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+.trustedDivs {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.trustedDivs div {
+  padding: 1rem;
+  background-color: #ecf1ec;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #003c2fa8;
+}
+.trustedDivs span {
+  color: var(--darkColor);
+}
+.lastSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lastSection .textDiv {
+  text-align: left;
+  width: 20%;
+}
+.lastSection .textDiv h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.lastSection .textDiv-1 {
+  border-bottom: 1px solid rgba(173, 173, 173, 0.443);
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+.imgdiv {
+  width: 30%;
+  display: block;
+  margin-right: 3rem;
+}
+
+.banner {
+  width: 60%;
+  background: var(--darkColor) url(../imgs/638f45.png);
+  color: var(--lightColor);
+  border-radius: 25px;
+  padding: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.banner p {
+  color: var(--lightColor);
+  font-size: 35px;
+  font-weight: 300;
+  text-align: left;
+}
+/* ====================================================(footer)=========================================================== */
+/* ====================================================(footer)=========================================================== */
+/* ====================================================(footer)=========================================================== */
