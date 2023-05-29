@@ -8,7 +8,7 @@
   --borderColor: #ee8146;
   --padding: 0 5%;
 }
-/* =============Glabal Selectors ========================== */
+/* ============= Glabal Selectors ========================== */
 * {
   padding: 0;
   margin: 0;
@@ -66,6 +66,11 @@ button {
   font-size: 16px;
   margin: 1rem 0;
   cursor: pointer;
+  transition: 0.3s;
+}
+button:hover{
+  border-radius: 2px 30px 2px 30px;
+  background-color: #4ecd31;
 }
 a {
   text-decoration: none;
@@ -81,31 +86,28 @@ li {
 }
 /* ====================================================(Header)=========================================================== */
 header nav {
-  width: 1100px;
+  width: 1300px;
   margin: 0 auto;
 }
 .nav1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0 4rem; */
-  padding: 10px;
-  border-bottom: 1px solid #4c4d5f48;
+  padding: 10px 10px  0 10px 10px;
+  border-bottom: 1px solid #8383874f;
 }
 
 .nav1 .logo {
  margin-top: 30px;
-  
 }
 .nav1 .nav-links ul {
   display: flex;
-  flex-flow: row;
-  /* flex-direction: row;  */
-  
+  flex-flow: row; 
 }
-.nav1 .nav-links ul li a{
- margin: 1rem;
- color: #4c4d5f;
+.nav1 .nav-links ul li a {
+ margin: 0 1rem;
+ color: #70826b;
+ font-weight: 500;
 }
 .nav1 .nav-links ul li a:hover {
   color: #00b289;
@@ -122,23 +124,25 @@ header nav {
   font-size: 18px;
   font-weight: 400;
   padding: 5px 15px;
+  transition: 0.3s;
 }
 .nav1 .login:hover {
-  background-color: #73838018;
-  border-radius: 10px;
+  background-color: #73837818;
+  border-radius: 30px;
   padding: 5px 15px;
 }
 .nav1 .btn .start {
-  background-color: #00b289;
+  background-color: var(--buttomColor);
   padding: 10px 20px;
   color: #fff;
-  border-radius: 15px;
+  border-radius: 30px;
+  transition: 0.3s;
 }
 .nav1 .btn .start:hover {
-  background-color: #2e6d5e;
+  background-color: #4ecd31;
   padding: 10px 20px;
   color: #fff;
-  border-radius: 15px;
+  border-radius: 2px 30px 2px 30px;
 }
 .nav2 {
   display: flex;
@@ -155,7 +159,7 @@ header nav {
 }
 .nav2 ul li a {
   margin: 0 10px;
-  color: #4c4d5f98;
+  color: #52943e;
 }
 .nav2 ul li a:hover {
   color: #4c4d5f;
@@ -277,7 +281,6 @@ main {
 }
 .accordion .contentBx {
   text-align: left;
-  /* margin: 10px 20px; */
 }
 .accordion .contentBx .label {
   position: relative;
@@ -392,7 +395,7 @@ img {
 
 
 footer .container {
-    width: 1100px;
+    width: 1300px;
     margin: 0 auto;
     border-bottom: 1px solid #4c4d5f48;
     padding: 10px;
@@ -400,14 +403,10 @@ footer .container {
 
 footer .container .row {
     display: flex;
-   
 }
 footer .container .row .col-1-5 {
-    flex: 0 0 25%;
-    
-    
+    flex: 0 0 25%; 
 }
-
 footer .container .row .col-1-5  img {
     width: 50%;
     margin-right: 2rem;
@@ -415,9 +414,11 @@ footer .container .row .col-1-5  img {
 footer .container .row .col-1-5 h4 {
     margin: 10px 0;
 }
-
+footer a{
+  font-size: 13px;
+  padding: 2px;
+}
 /* footer-copy */
-
 .footer-copy .container {
     width: 1100px;
     margin: 0 auto;
